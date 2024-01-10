@@ -78,14 +78,16 @@
 .boxcontent2{
     border-left: 1px #ccc solid;
     border-right: 1px #ccc solid;
-    min-height: 200px;
+    background-color: #EEE;
 }
 .boxfooter{
     padding: 10px;
     background-color: #EEE;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: 1px #ccc solid;
+    border-left: 1px #ccc solid;
+    border-right: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
 }
 .banner{
     min-height: 500px;
@@ -131,24 +133,24 @@
 .formlogin{
     line-height: 150%;  
 }
-.formlogin input [type="text"],
-.formlogin input [type="password"]{
+.formlogin input[type="text"],
+.formlogin input[type="password"]{
     width: 100%;
     border: 1px #ccc solid;
-    padding:  5px 10px;
+    padding:  10px;
     border-radius: 5px;
 }
-.formlogin input [type="checkbox"]{
+.formlogin input[type="checkbox"]{
     border-radius: 5px;
 }
-.formlogin input [type="submit"]{
+.formlogin input[type="submit"]{
     border-radius: 5px;
     padding: 5px 10px;
     background-color:white;
     border: 1px #ccc solid;
 
 }
-.formlogin input [type="submit"]:hover{
+.formlogin input[type="submit"]:hover{
     background-color: #ccc;
     color: #fff;
 }
@@ -159,3 +161,52 @@
 .formlogin li a:hover{
     color: red;
 }   
+/* menu */
+.menudoc ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.menudoc ul li{
+    padding: 10px 20px;
+    background-color: #FFF;
+    border-bottom: 1px #ccc solid;
+}
+.menudoc ul li a{
+    text-decoration: none;
+    color: #666;
+}
+.menudoc ul li a:hover{
+    background-color: #ccc;
+}
+.searbox input[type="text"]{
+    width: 100%;
+    border: 1px #ccc solid;
+    padding:  10px;
+    border-radius: 5px;
+}
+.top5 img{
+    width: 20%;
+    height: 50%;
+    float: left;
+    margin-right: 10px;
+}
+.top5 a{
+    color: #666;
+    text-decoration: none;
+}
+.top5 a:hover{
+    color: #000;
+}
+/*ADMIN*/
+.headeradmin{
+    background-color: aquamarine;
+    border: 1px #090 solid;
+    color: #666;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.headeradmin h1{
+    margin: 0;
+    font-size: 1.5vw;
+}
