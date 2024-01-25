@@ -134,7 +134,8 @@
     line-height: 150%;  
 }
 .formlogin input[type="text"],
-.formlogin input[type="password"]{
+.formlogin input[type="password"],
+.frmcontent input[type="text"]{
     width: 100%;
     border: 1px #ccc solid;
     padding:  10px;
@@ -143,14 +144,20 @@
 .formlogin input[type="checkbox"]{
     border-radius: 5px;
 }
-.formlogin input[type="submit"]{
+.formlogin input[type="submit"],
+.frmcontent input[type="submit"],
+.frmcontent input[type="reset"],
+.frmcontent input[type="button"]{
     border-radius: 5px;
     padding: 5px 10px;
     background-color:white;
     border: 1px #ccc solid;
 
 }
-.formlogin input[type="submit"]:hover{
+.formlogin input[type="submit"]:hover,
+.frmcontent input[type="submit"]:hover,
+.frmcontent input[type="reset"]:hover,
+.frmcontent input[type="button"]:hover{
     background-color: #ccc;
     color: #fff;
 }
@@ -200,8 +207,8 @@
 }
 /*ADMIN*/
 .headeradmin{
-    background-color: aquamarine;
-    border: 1px #090 solid;
+    background-color: #eee;
+    border: 1px #ccc solid;
     color: #666;
     border-radius: 5px;
     padding: 10px 20px;
@@ -209,4 +216,40 @@
 .headeradmin h1{
     margin: 0;
     font-size: 1.5vw;
+}
+.frmtitle{
+    background-color: #eee;
+    border: 1px #ccc solid;
+    color: #666;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.frmcontent{
+    padding: 20px 0px;
+}
+.frmdsloai table{
+    width: 100%;
+    border-collapse:collapse;
+    border: 1px #999 solid;
+}
+.frmdsloai table th:nth-child(1){
+    width: 10%;
+    padding: 20px 0px;
+    background-color: #ccc;
+}
+.frmdsloai table th:nth-child(2){
+    width: 30%;
+    background-color: #ccc;
+}
+.frmdsloai table th:nth-child(3){
+    width: 40%;
+    background-color: #ccc;
+}
+.frmdsloai table th:nth-child(4){
+    width: 20%;
+    background-color: #ccc;
+}
+.frmdsloai table td {
+    padding: 10px 20px;
+    border: 1px #999 solid;
 }
