@@ -1,27 +1,40 @@
-<?php 
+<?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
   include "../model/pdo.php";
   include "header.php";
   // controller
-
-  if(isset($G_GET['act'])){
-    $act = $G_GET['act'];
+  if(isset($_GET['act'])){
+    $act=$_GET['act'];
     switch($act){
       case'adddm':
-        include "danhmuc/add.php";
-        // kiểm tra xem người dùng có click vào nút add hay khôngì
+
+
+        // kiểm tra xem người dùng có click vào nút add hay không
         if(isset($_POST['themmoi'])&&($_POST['themmoi'])){
-          $tenloai = isset($_POST['tenloai']);
+          $tenloai = isset($_POST['tenloai'])?$_POST['tenloai']:"";
           $sql = "INSERT INTO danhmuc(name) VALUES('$tenloai')";
           pdo_execute($sql);
-          $thongbao = "Thêm mới thành công";
+          // $thongbao="Thêm mới thành công";
         }
-          
-        
+        include "danhmuc/add.php";
         
         break;
-      case'addsp':
-        include "sanpham/add.php";
+      case'listdm':
+        $sql = "SELECT * FROM danhmuc ORDER BY name ";
+        pdo_query($sql);
+        $listdanhmuc=pdo_query($sql);
+        include "danhmuc/list.php";
         break;
+        case'xoadm';
+        if(isset($_GET['id'])&&($_GET['id']>0)){
+         $sql="DELETE FROM danhmuc WHERE id=".$_GET['id'];
+         $listdanhmuc=pdo_query($sql);
+          pdo_execute($sql);
+        }
+        include "danhmuc/list.php";
+
     default:
       include "home.php";    
     }

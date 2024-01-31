@@ -15,10 +15,10 @@
       <div class="row mb menu">
         <ul>
           <li><a href="index.php">Trang chủ</a></li>
-          <li><a href="index.php?act-adddm">Danh Mục</a></li>
-          <li><a href="index.php?act-addsp">Sản Phẩm</a></li>
-          <li><a href="index.php?act-dskh">Khách Hàng</a></li>
-          <li><a href="index.php?act-dsbl">Bình Luận</a></li>
-          <li><a href="index.php?act-thongke">Thống Kê</a></li>
+          <li><a href="index.php?act=adddm">Danh Mục</a></li>
+          <li><a href="index.php?act=addsp">Sản Phẩm</a></li>
+          <li><a href="index.php?act=dskh">Khách Hàng</a></li>
+          <li><a href="index.php?act=dsbl">Bình Luận</a></li>
+          <li><a href="index.php?act=thongke">Thống Kê</a></li>
         </ul>
       </div>

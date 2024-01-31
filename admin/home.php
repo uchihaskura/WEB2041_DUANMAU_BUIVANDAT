@@ -3,7 +3,7 @@
             <h1>Thêm Mới Loại Hàng</h1>
         </div>
         <div class="row frmcontent">
-            <form action="#" method="post">
+            <form action="index.php?act=adddm" method="post">
                 <div class="row mb10">
                     Mã Loại
                     <input type="text" name="maloai" disabled>
@@ -15,7 +15,7 @@
                <div class="row mb10">
                 <input type="submit" value="THÊM MỚI">
                 <input type="reset" value="NHẬP LẠI">
-                <a href="./danhsachloaihang.html"><input type="button" value="DANH SÁCH">
+                <a href="index.php?act=listdm"><input type="button" value="DANH SÁCH">
                </div>
             </form>
         </div>
